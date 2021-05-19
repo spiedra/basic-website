@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #F2F2F2;
+  color: #011126;
 }
 
 body {
   font-family: "open sans";
-  background-color: #F2F2F2;
+  background-color: #011126;
 }
 
 /* responsive: mobile-first */
@@ -23,14 +23,14 @@ body {
 
 .page-header {
   width: 100%;
-  height: 42em;
+  height: 35em;
   background-image: url(../images/sloth-2759724_1920.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
-  color: #fff;
+  color: #011126;
   text-align: center;
 }
 
@@ -59,20 +59,18 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin: 1em 0 0 0;
-  /* background-color: ; */
 }
 
 .nav__menu {
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 92vh;
+  height: 50vh;
   margin: 0;
   padding: 0;
   opacity: 0;
   width: 100%;
-  background-color: #06111c;
 }
 
 @keyframes showMenu {
@@ -100,7 +98,7 @@ body {
   text-decoration: none;
   margin: 0.5em;
   padding: 0.5rem 1rem;
-  color: #eee0dd;
+  color: #011126;
   transition: 0.2s linear;
   border-radius: 4px;
 }
@@ -123,23 +121,26 @@ body {
 
 .menu__item,
 .menu__link:hover {
-  color: #06111c;
-}
-
-.button-open,
-.button-close {
-  display: inline-flex;
-  font-size: 2em;
-  color: #fff;
-  cursor: pointer;
+  color: #011126;
 }
 
 .button-open {
-  margin-right: 0.5em;
+  display: inline-flex;
+  cursor: pointer;
   align-self: flex-end;
+  color: #011126;
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 0.2rem .2rem;
+  background-color: #F2F2F2;
+  border-radius: 2px;
 }
 
 @media all and (min-width: 800px) {
+  .page-header {
+    height: 45em;
+  }
+
   .page-main {
     flex: 3;
     order: 2;
@@ -165,6 +166,7 @@ body {
   }
 
   .nav__menu {
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: flex-end;
@@ -190,5 +192,9 @@ body {
 
   .page-aside {
     flex: 1;
+  }
+
+  .page-header {
+    height: 45em;
   }
 }

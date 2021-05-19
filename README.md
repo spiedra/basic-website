@@ -1,1 +1,1 @@
-# Basic website | HTML5 - CSS3 - JavaScript
+# Website | HTML5 - CSS3 - JavaScript

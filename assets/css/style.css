@@ -22,7 +22,7 @@ body {
 
 .page-header {
   background-color: tomato;
-  height: 120px;
+  height: 300px;
 }
 
 .page-footer {
@@ -47,30 +47,38 @@ body {
 
 .header__nav {
   display: flex;
+  flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
   margin: 1em 0 0 0;
-  /* background-color: #06111c; */
-}
-
-header:nth-of-type(3){
-  background-color: black;
 }
 
 .nav__menu {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  height: 92vh;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
   width: 100%;
-  /* height: calc(100% - 65px); */
-  height: 15em;
-  background-color: #414141;
-  top: -100vh;
-  /* top: 60px; */
-  text-align: center;
-  transition: all 0.4s;
+  background-color: #06111c;
+}
+
+@keyframes showMenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.nav__menu.active {
+  display: flex;
+  animation: showMenu 350ms ease-in-out both;
 }
 
 .menu__item {
@@ -118,19 +126,11 @@ header:nth-of-type(3){
 }
 
 .button-open {
-  margin-right: 1em;
+  margin-right: .5em;
+  align-self: flex-end;
 }
 
-.button-close {
-  /* display: inline-flex;
-  margin-right: 1em;
-  font-size: 2em;
-  color: #fff;
-  cursor: pointer; */
-  display: none;
-}
-
-@media all and (min-width: 800px) {
+ @media all and (min-width: 800px) {
   .page-main {
     flex: 3;
     order: 2;
@@ -151,25 +151,28 @@ header:nth-of-type(3){
   }
 
   .header__nav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em;
+    align-items: flex-end;
+    margin: 0;
   } 
 
  .nav__menu {
-    display: flex;
     flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: fit-content;
-    width: fit-content;
+    width:fit-content;
     background-color: transparent;
     top: 0;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    transition: none;
   }
 
   .button-open{
     display: none;
   }
-
-}
+} 
 
 /* @media all and (min-width: 600px){
   .page-nav__hyperlinks{

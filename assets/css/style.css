@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #F2F2F2;
 }
 
 body {
   font-family: "open sans";
+  background-color: #F2F2F2;
 }
 
 /* responsive: mobile-first */
@@ -16,13 +18,20 @@ body {
 }
 
 .page-body > * {
-  margin: 1px;
   flex: 1 100%;
 }
 
 .page-header {
-  background-color: tomato;
-  height: 300px;
+  width: 100%;
+  height: 42em;
+  background-image: url(../images/sloth-2759724_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
 }
 
 .page-footer {
@@ -34,7 +43,6 @@ body {
   text-align: left;
   background-color: deepskyblue;
   height: 300px;
-  /* height: 100vh; */
 }
 
 .page-nav__hyperlinks {
@@ -51,6 +59,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin: 1em 0 0 0;
+  /* background-color: ; */
 }
 
 .nav__menu {
@@ -126,41 +135,41 @@ body {
 }
 
 .button-open {
-  margin-right: .5em;
+  margin-right: 0.5em;
   align-self: flex-end;
 }
 
- @media all and (min-width: 800px) {
+@media all and (min-width: 800px) {
   .page-main {
     flex: 3;
     order: 2;
   }
 
-  .page-nav__hyperlinks{
+  .page-nav__hyperlinks {
     flex: auto;
     order: 1;
   }
 
-  .page-aside{
+  .page-aside {
     flex: auto;
     order: 3;
   }
 
-  .page-footer{
+  .page-footer {
     order: 4;
   }
 
-  .header__nav{
+  .header__nav {
     align-items: flex-end;
     margin: 0;
-  } 
+  }
 
- .nav__menu {
+  .nav__menu {
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: flex-end;
     height: fit-content;
-    width:fit-content;
+    width: fit-content;
     background-color: transparent;
     top: 0;
     opacity: 1;
@@ -169,19 +178,17 @@ body {
     transition: none;
   }
 
-  .button-open{
+  .button-open {
     display: none;
   }
-} 
+}
 
-/* @media all and (min-width: 600px){
-  .page-nav__hyperlinks{
+@media all and (min-width: 600px) {
+  .page-nav__hyperlinks {
     flex: 1;
   }
 
-  .page-aside{
+  .page-aside {
     flex: 1;
   }
-} */
-
-/* -- */
+}

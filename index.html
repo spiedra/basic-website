@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Juan Carlos Sequeira Piedra" />
     <meta name="keywords" content="flora, fauna, naturaleza, curridabat, tours" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/headerAnimation.js"></script>
     <title>Flora y Fauna - Curridabat</title>
 </head>
 
 <body class="page-body">
     <header class="page-header">
         <nav class="header__nav">
-            <div class="container-logo">
-                <a class="container-logo__link" href="index.html">
-                    <img class="container-logo__image" alt="Logo principal de la pagina web"
-                        src="assets/images/main-logo.svg" />
-                </a>
+            <div class="nav-container__principal">
+                <div class="container-logo">
+                    <a class="container-logo__link" href="index.html">
+                        <img class="container-logo__image" alt="Logo principal de la pagina web"
+                            src="assets/images/main-logo.svg" />
+                    </a>
+                </div>
+                <span class="material-icons button-open"> menu</span>
+                <ul class="nav__menu">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="layouts/tours.html" class="menu__link">Nuestros Tours</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="layouts/contact.html" class="menu__link">Contactanos</a>
+                    </li>
+                </ul>
             </div>
-            <span class="material-icons button-open"> menu</span>
-            <ul class="nav__menu">
-                <li class="menu__item">
-                    <a href="index.html" class="menu__link">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="layouts/tours.html" class="menu__link">Nuestros Tours</a>
-                </li>
-                <li class="menu__item">
-                    <a href="layouts/contact.html" class="menu__link">Contactanos</a>
-                </li>
-            </ul>
+            <canvas id="canvas" class="header__animation"></canvas>
         </nav>
     </header>
     <nav class="page-nav__hyperlinks">

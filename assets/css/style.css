@@ -176,11 +176,15 @@ body {
   font-size: 28px;
 }
 
+/*
 .header__animation {
-
+background-color: transparent; 
+ width: min-content; 
+ width: 100%;
+height: min-content;
 }
 
-/* @media only screen and (min-width: 800px) {
+ @media only screen and (min-width: 800px) {
   .page-header {
     height: 38em;
   }
@@ -238,9 +242,9 @@ body {
   .button-open {
     display: none;
   }
-} */
+} 
 
-/* @media (max-width: 799px) and (min-width: 600px) {
+ @media (max-width: 799px) and (min-width: 600px) {
   .page-nav__hyperlinks {
     flex: 1;
   }
@@ -252,4 +256,5 @@ body {
   .page-header {
     height: 45em;
   }
-} */
+} 
+*/

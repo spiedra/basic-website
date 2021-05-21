@@ -1,8 +1,12 @@
 var canvas = null,
     ctx = null,
-    x = 50,
-    y = 17,
-    widthBrowser = window.outerWidth;
+    x = 0,
+    y = 44;
+
+var img;
+// img.src = 'mariposa.png';
+
+var img = document.getElementById("image");
 
 window.requestAnimationFrame = (
     function () {
@@ -16,17 +20,21 @@ window.requestAnimationFrame = (
 );
 
 function paint(ctx) {
-    ctx.fillStyle = '#FFF';
-    ctx.fillRect(0, 0, widthBrowser, canvas.height);
-
-    ctx.fillStyle = '#0f0';
-    ctx.fillRect(x, y, 20, 20);
+    setAttributeToCava();
+    ctx.drawImage(this.img, x, y, 50, 50);
 }
 
 function update() {
-    x += 2;
-    if (x > widthBrowser)
+    x += 1;
+    if (x > window.outerWidth) {
         x = 0;
+    }
+
+    if (y > -40) {
+        y -= 1;
+    } else {
+        y = 80;
+    }
 }
 
 function run() {
@@ -36,9 +44,16 @@ function run() {
 }
 
 function init() {
+    this.img = new Image();
+    img.src = 'https://image.flaticon.com/icons/png/512/338/338259.png';
     canvas = document.getElementById('canvas');
     ctx = canvas.getContext('2d');
     run();
+}
+
+function setAttributeToCava() {
+    var canvaComponent = document.querySelector('.header__animation');
+    canvaComponent.setAttribute("width", window.outerWidth);
 }
 
 window.addEventListener('load', init, false);

@@ -4,9 +4,6 @@ var canvas = null,
     y = 44;
 
 var img;
-// img.src = 'mariposa.png';
-
-var img = document.getElementById("image");
 
 window.requestAnimationFrame = (
     function () {
@@ -19,28 +16,23 @@ window.requestAnimationFrame = (
     }()
 );
 
-function paint(ctx) {
-    setAttributeToCava();
-    ctx.drawImage(this.img, x, y, 50, 50);
+function paint() {
+    // setAttributeToCava();
+    ctx.drawImage(this.img, x, y, 70, 70);
 }
 
-function update() {
-    x += 1;
-    if (x > window.outerWidth) {
-        x = 0;
-    }
-
-    if (y > -40) {
-        y -= 1;
-    } else {
-        y = 80;
-    }
+function update(time) {
+    time *= 0.001; // seconds;
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    x = Math.sin(time * 2) * 100 + 100;
+    y = Math.sin(time * 5) * 50 + 50;
+    paint();
+    window.requestAnimationFrame(update);
 }
 
 function run() {
-    window.requestAnimationFrame(run);
     update();
-    paint(ctx);
+    window.requestAnimationFrame(update);
 }
 
 function init() {
@@ -53,7 +45,7 @@ function init() {
 
 function setAttributeToCava() {
     var canvaComponent = document.querySelector('.header__animation');
-    canvaComponent.setAttribute("width", window.outerWidth);
+    canvaComponent.setAttribute("width", window.outerWidth / 2);
 }
 
 window.addEventListener('load', init, false);

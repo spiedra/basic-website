@@ -17,12 +17,11 @@ window.requestAnimationFrame = (
 );
 
 function paint() {
-    // setAttributeToCava();
     ctx.drawImage(this.img, x, y, 70, 70);
 }
 
 function update(time) {
-    time *= 0.001; // seconds;
+    time *= 0.001;
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     x = Math.sin(time * 2) * 100 + 100;
     y = Math.sin(time * 5) * 50 + 50;

@@ -39,6 +39,7 @@ body {
 .page-footer {
   background-color: lightgreen;
   height: 80px;
+  width: 100%;
 }
 
 .page-main {
@@ -179,6 +180,53 @@ body {
   margin: 0;
 }
 
+.footer__first-row {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/toucan-1586967_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #212529;
+  text-align: center;
+  width: 100%;
+}
+
+.menu__list--resources-tittle {
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.footer-container__resources,
+.footer-container__local-transport,
+.footer-container__tourist-sites {
+  color: #f2f2f2;
+  background-color: hsla(0, 0%, 95%, 0.065);
+  padding: 1em 0.5em;
+  margin: 3em 0em;
+  border-radius: 10px;
+  width: 35%;
+}
+
+.menu__link--local-transport,
+.menu__link--resources,
+.menu__link--tourist-sites {
+  font-size: 18px;
+}
+
+.footer-container__bottom-message {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2em 0;
+}
+
 /* @media only screen and (min-width: 800px) {
   .page-header {
     height: 38em;
@@ -234,11 +282,24 @@ body {
     padding: 0;
   }
 
+  .footer__first-row {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 40em;
+  }
+
+  .footer-container__resources,
+  .footer-container__local-transport,
+  .footer-container__tourist-sites {
+    width: 25%;
+    height: 50%;
+  }
+
   .button-open {
     display: none;
   }
-}
-*/
+} */
+
 /* @media (max-width: 799px) and (min-width: 600px) {
   .page-nav__hyperlinks {
     flex: 1;

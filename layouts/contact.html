@@ -1,60 +1,386 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Juan Carlos Sequeira Piedra" />
-    <meta name="keywords" content="flora, fauna, naturaleza, curridabat, tours" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <!-- <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" sizes="16"/> -->
+    <meta
+      name="keywords"
+      content="flora, fauna, naturaleza, curridabat, tours"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/headerAnimation.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/updateMainContent.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/dynamicModal.js"></script>
     <title>Flora y Fauna - Curridabat</title>
-</head>
+  </head>
 
-<body>
+  <body id="page-body" class="page-body">
     <header class="page-header">
-        <div class="container-logo">
-            <a class="container-logo__link" href="../index.html">
-                <img class="container-logo__image" alt="Logo principal de la pagina web"
-                    src="../assets/images/main_icon.svg" />
+      <nav class="header__nav">
+        <div class="nav-container__principal">
+          <div class="container-logo">
+            <a class="container-logo__link" href="index.html">
+              <img
+                class="container-logo__image"
+                alt="Logo principal de la pagina web"
+                src="assets/images/main-logo.svg"
+              />
             </a>
+          </div>
+          <span class="material-icons button-open"> menu</span>
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Inicio</a>
+            </li>
+            <li class="menu__item">
+              <a href="layouts/tours.html" class="menu__link">Nuestros Tours</a>
+            </li>
+            <li class="menu__item">
+              <a href="layouts/contact.html" class="menu__link">Contactanos</a>
+            </li>
+          </ul>
         </div>
-        <nav class="header__nav">
-            <ul class="nav__menu">
-                <li class="menu__list">
-                    <a href="../index.html" class="menu__link">Inicio</a>
-                </li>
-                <li class="menu__list">
-                    <a href="../layouts/tours.html" class="menu__link">Nuestros Tours</a>
-                </li>
-                <li class="menu__list">
-                    <a href="../layouts/contact.html" class="menu__link">Contactanos</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="container-tittle">
-            <h1 class="container-tittle__h1">Contactanos</h1>
-            <h2 class="container-tittle__h2">Numeros telefonicos - Redes sociales - Correos electronicos</h2>
-        </div>
+        <canvas id="canvas" class="header__animation" height="200px"></canvas>
+      </nav>
     </header>
-    <nav class="page-nav__hyperlinks">
-        <ul class="nav__menu nav__menu--hyperlinks">
-            <li class="menu__list menu__list--hyperlinks">
-                <a href="#" class="menu__link menu__link--hyperlinks">Historia</a>
-            </li>
-            <li class="menu__list menu__list--hyperlinks">
-                <a href="#" class="menu__link menu__link--hyperlinks">Flora</a>
-            </li>
-            <li class="menu__list menu__list--hyperlinks">
-                <a href="#" class="menu__link menu__link--hyperlinks">Fauna</a>
-            </li>
-        </ul>
+    <nav id="nav-hyperlinks" class="page-nav__hyperlinks">
+      <ul class="nav__menu nav__menu--hyperlinks">
+        <li class="menu__item menu__list--hyperlinks">
+          <a id="link_history" class="menu__link menu__link--hyperlinks"
+            >Historia</a
+          >
+        </li>
+        <li class="menu__item menu__list--hyperlinks">
+          <a id="link_flora" class="menu__link menu__link--hyperlinks">Flora</a>
+        </li>
+        <li class="menu__item menu__list--hyperlinks">
+          <a id="link_fauna" class="menu__link menu__link--hyperlinks">Fauna</a>
+        </li>
+      </ul>
     </nav>
-    <main class="page-main"></main>
-    <aside class="page-aside"></aside>
+    <main id="page-main" class="page-main">
+      <section id="section_history" class="section__main">
+        <h2 id="section_tittle" class="section__tittle">
+          Cantón de Turrubares
+        </h2>
+        <article id="section_article_history" class="section__article">
+          <img
+            class="img__principal"
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Escudo_de_Turrubares.png"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Turrubares es el cantón número 16 de la provincia de San José, en
+            Costa Rica. Limita con el cantón de Atenas por el norte, con los
+            cantones de Orotina y Garabito por el oeste, con el cantón de
+            Parrita por el sur, con el cantón de Puriscal por el este y con el
+            cantón de Mora por el noreste, y cuenta con una extensión
+            territorial de 415,29 km².2​ Su cabecera es San Pablo, con categoría
+            de ciudad. El cantón cuenta con 6.532 habitantes, de acuerdo con la
+            última proyección demográfica del INEC.3​ El cantón se caracteriza
+            por su riqueza natural dada principalmente por el parque nacional
+            Carara, el cual abarca una gran parte del sur de Turrubares. También
+            se caracteriza por ser el cantón menos poblado de Costa Rica y por
+            estar entre los que tienen menor densidad de población (15,73
+            hab/km²). Turrubares cuenta con la esperanza de vida más alta del
+            país (85,5 años) y un Índice de Desarrollo Humano de 0,751,
+            clasificado como alto.
+          </p>
+        </article>
+      </section>
+      <section id="section_flora" class="section__main">
+        <article id="section_article" class="section__article">
+          <h3 id="article_tittle" class="article__tittle">Planta 1</h3>
+          <img
+            class="img__principal"
+            src="https://u9b4k6n8.stackpathcdn.com/wp-content/uploads/2013/07/perezoso.jpg"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
+            doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
+            dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Reiciendis, molestiae sint. Id
+            molestias delectus reprehenderit dolores nihil voluptatem rem,
+            officiis et sed, corporis inventore consequatur deleniti placeat
+            maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Similique magnam, dolor ducimus, exercitationem
+            veritatis sint voluptatem tenetur libero ipsam modi, placeat
+            suscipit quisquam iure officia eius nulla atque tempore aspernatur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
+            facere provident distinctio quasi laborum debitis temporibus est
+            vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
+            consequatur necessitatibus aliquam exercitationem quos eaque
+            incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
+            ducimus ratione autem.
+          </p>
+        </article>
+        <article id="section_article" class="section__article">
+          <h3 id="article_tittle" class="article__tittle">Planta 2</h3>
+          <img
+            class="img__principal"
+            src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/venado-cola-blanca-cr-600x478.jpg"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
+            doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
+            dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Reiciendis, molestiae sint. Id
+            molestias delectus reprehenderit dolores nihil voluptatem rem,
+            officiis et sed, corporis inventore consequatur deleniti placeat
+            maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Similique magnam, dolor ducimus, exercitationem
+            veritatis sint voluptatem tenetur libero ipsam modi, placeat
+            suscipit quisquam iure officia eius nulla atque tempore aspernatur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
+            facere provident distinctio quasi laborum debitis temporibus est
+            vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
+            consequatur necessitatibus aliquam exercitationem quos eaque
+            incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
+            ducimus ratione autem.
+          </p>
+        </article>
+        <article id="section_article" class="section__article">
+          <h3 id="article_tittle" class="article__tittle">Planta 3</h3>
+          <img
+            class="img__principal"
+            src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/tepezcuintle-cr-600x450.jpg"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
+            doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
+            dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Reiciendis, molestiae sint. Id
+            molestias delectus reprehenderit dolores nihil voluptatem rem,
+            officiis et sed, corporis inventore consequatur deleniti placeat
+            maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Similique magnam, dolor ducimus, exercitationem
+            veritatis sint voluptatem tenetur libero ipsam modi, placeat
+            suscipit quisquam iure officia eius nulla atque tempore aspernatur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
+            facere provident distinctio quasi laborum debitis temporibus est
+            vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
+            consequatur necessitatibus aliquam exercitationem quos eaque
+            incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
+            ducimus ratione autem.
+          </p>
+        </article>
+      </section>
+      <section id="section_fauna" class="section__main">
+        <article id="section_article" class="section__article">
+          <h3 id="article_tittle" class="article__tittle">Perezoso</h3>
+          <img
+            class="img__principal"
+            src="https://u9b4k6n8.stackpathcdn.com/wp-content/uploads/2013/07/perezoso.jpg"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
+            doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
+            dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Reiciendis, molestiae sint. Id
+            molestias delectus reprehenderit dolores nihil voluptatem rem,
+            officiis et sed, corporis inventore consequatur deleniti placeat
+            maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Similique magnam, dolor ducimus, exercitationem
+            veritatis sint voluptatem tenetur libero ipsam modi, placeat
+            suscipit quisquam iure officia eius nulla atque tempore aspernatur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
+            facere provident distinctio quasi laborum debitis temporibus est
+            vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
+            consequatur necessitatibus aliquam exercitationem quos eaque
+            incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
+            ducimus ratione autem.
+          </p>
+        </article>
+        <article id="section_article" class="section__article">
+          <h3 id="article_tittle" class="article__tittle">
+            Venado cola blanca
+          </h3>
+          <img
+            class="img__principal"
+            src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/venado-cola-blanca-cr-600x478.jpg"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
+            doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
+            dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Reiciendis, molestiae sint. Id
+            molestias delectus reprehenderit dolores nihil voluptatem rem,
+            officiis et sed, corporis inventore consequatur deleniti placeat
+            maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Similique magnam, dolor ducimus, exercitationem
+            veritatis sint voluptatem tenetur libero ipsam modi, placeat
+            suscipit quisquam iure officia eius nulla atque tempore aspernatur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
+            facere provident distinctio quasi laborum debitis temporibus est
+            vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
+            consequatur necessitatibus aliquam exercitationem quos eaque
+            incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
+            ducimus ratione autem.
+          </p>
+        </article>
+        <article id="section_article" class="section__article">
+          <h3 id="article_tittle" class="article__tittle">Tepezcuintles</h3>
+          <img
+            class="img__principal"
+            src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/tepezcuintle-cr-600x450.jpg"
+            alt="Escudo del cantón de Turrubares"
+          />
+          <p class="article__information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
+            doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
+            dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Reiciendis, molestiae sint. Id
+            molestias delectus reprehenderit dolores nihil voluptatem rem,
+            officiis et sed, corporis inventore consequatur deleniti placeat
+            maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Similique magnam, dolor ducimus, exercitationem
+            veritatis sint voluptatem tenetur libero ipsam modi, placeat
+            suscipit quisquam iure officia eius nulla atque tempore aspernatur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
+            facere provident distinctio quasi laborum debitis temporibus est
+            vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
+            consequatur necessitatibus aliquam exercitationem quos eaque
+            incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
+            ducimus ratione autem.
+          </p>
+        </article>
+      </section>
+    </main>
+    <aside class="page-aside">
+      <div class="aside-container">
+        <img
+          id="aside_first_img"
+          class="aside-containe__image"
+          src="https://cdn.pixabay.com/photo/2020/01/22/15/05/parrot-4785502_1280.jpg"
+          alt="Lapa roja"
+        />
+        <a id="aside_first_link" class="aside_link">Lapa Roja - Guacamaya</a>
+      </div>
+      <div class="aside-container">
+        <img
+          id="aside_second_img"
+          class="aside-containe__image"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tika2009Jan24.jpg/230px-Tika2009Jan24.jpg"
+          alt="Tigrillo"
+        />
+        <a id="aside_second_link" class="aside_link"
+          >Oncilla (Leopardus tigrinus)</a
+        >
+      </div>
+    </aside>
     <footer class="page-footer">
-        <p><small>2021 Juan Carlos Sequeira Piedra | Fines educativos</small></p>
+      <div class="footer__first-row">
+        <div class="footer-container footer-container__tourist-sites">
+          <ul class="footer__hyperlinks">
+            <li class="menu__item menu__item--tittle">
+              <h5 class="menu__list--resources-tittle">Sitios turisticos</h5>
+            </li>
+            <li class="menu__item menu__list--tourist-sites">
+              <a
+                href="http://www.sinac.go.cr/ES/ac/acopac/pnc/Paginas/default.aspx"
+                class="menu__link menu__link--footer"
+                >Parque Nacional Carara</a
+              >
+            </li>
+            <li class="menu__item menu__list--tourist-sites">
+              <a
+                href="https://www.villalapas.com/"
+                class="menu__link menu__link--footer"
+                >Villa Lapas</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container footer-container__local-transport">
+          <ul class="footer__hyperlinks">
+            <li class="menu__item menu__item--tittle">
+              <h5 class="menu__list--resources-tittle">Transporte local</h5>
+            </li>
+            <li class="menu__item menu__list--local-transport">
+              <a
+                href="https://www.kolbi1155.com/costa-rica/negocios/asociacion-de-taxis-de-jaco/jaco-garabito"
+                class="menu__link menu__link--footer"
+                >Taxis Jaco</a
+              >
+            </li>
+            <li class="menu__item menu__list--local-transport">
+              <a
+                href="https://www.transportesjacoruta655.com/"
+                class="menu__link menu__link--footer"
+                >Transporte Jaco</a
+              >
+            </li>
+            <li class="menu__item menu__list--local-transport">
+              <a href="#" class="menu__link menu__link--footer">Fauna</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container footer-container__resources">
+          <ul class="footer__hyperlinks">
+            <li class="menu__item menu__item--tittle">
+              <h5 class="menu__list--resources-tittle">Enlaces de interes</h5>
+            </li>
+            <li class="menu__item menu__list--resources">
+              <a
+                href="http://www.crbio.cr/crbio/?page_id=61&lang=en"
+                class="menu__link menu__link--footer"
+                >CRBio</a
+              >
+            </li>
+            <li class="menu__item menu__list--resources">
+              <a
+                href="https://www.sirefor.go.cr/"
+                class="menu__link menu__link--footer"
+                >SIREFOR</a
+              >
+            </li>
+            <li class="menu__item menu__list--resources">
+              <a
+                href="https://minae.go.cr/"
+                class="menu__link menu__link--footer"
+                >MINAE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container__bottom-message">
+        <p>
+          <small>2021 Juan Carlos Sequeira Piedra | Fines educativos</small>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

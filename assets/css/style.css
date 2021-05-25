@@ -30,8 +30,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
   color: #212529;
   text-align: center;
 }
@@ -214,8 +214,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
   color: #212529;
   text-align: center;
   width: 100%;
@@ -437,7 +437,7 @@ body {
   flex: 3;
 }
 
- @media only screen and (min-width: 800px) {
+ /* @media only screen and (min-width: 800px) {
   .page-header {
     height: 38em;
   }
@@ -550,7 +550,7 @@ body {
   .button-open {
     display: none;
   }
-}
+} */
 
 
 /* @media (max-width: 799px) and (min-width: 600px) {

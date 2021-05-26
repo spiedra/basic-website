@@ -28,9 +28,9 @@ body {
   height: 32em;
   background-image: url(../images/sloth-2759724_1920.jpg);
   /* background-attachment: fixed !important; */
-  background-position: center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* position: relative; */
   /* overflow: hidden; */
   /* text-align: center; */
@@ -212,14 +212,17 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url(../images/toucan-1586967_1920.jpg);
-  background-attachment: fixed;
+  /* background-attachment: fixed;
+  background-position: center;
+  background-size: cover; */
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   /* position: relative;
   overflow: hidden; */
   color: #212529;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .menu__list--resources-tittle {

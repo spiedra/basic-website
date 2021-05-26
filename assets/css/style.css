@@ -125,6 +125,10 @@ body {
   animation: showMenu 350ms ease-in-out both;
 }
 
+.nav__menu--contact{
+  height: 50vh;
+}
+
 .menu__item {
   list-style: none;
   margin: 30px 0 0 0;
@@ -132,12 +136,12 @@ body {
 }
 
 .menu__link {
-  text-decoration: none;
+  text-decoration: none; 
   padding: 0.5rem 1rem;
   color: #212529;
   transition: 0.2s linear;
   border-radius: 4px;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #ffffff;
   margin: 0em 0.3em;
 }
@@ -435,7 +439,14 @@ body {
   flex: 3;
 }
 
- @media only screen and (min-width: 800px) {
+.article__main-container{
+  cursor: pointer;
+  height: 5em;
+  width: 100%;
+  background-color: brown;
+}
+
+ /* @media only screen and (min-width: 800px) {
   .page-header {
     height: 75vh;
   }
@@ -546,7 +557,7 @@ body {
   }
 
   .menu__link{
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .button-open {
@@ -564,7 +575,6 @@ body {
   }
 
   .page-header {
-    /* height: 45em; */
     height: 75vh;
   }
 
@@ -616,4 +626,4 @@ body {
   .modal-image {
     height: 50%;
   }
-}
+} */

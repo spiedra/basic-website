@@ -8,7 +8,7 @@
     <meta name="keywords" content="flora, fauna, naturaleza, Turrubares, contactos, mapa, Carara" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <script type="text/javascript" src="../assets/js/chooseTours.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
     <title>Flora y Fauna - Turrubares</title>
 </head>
 
@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <span class="material-icons button-open"> menu</span>
-                <ul class="nav__menu">
+                <ul class="nav__menu nav__menu--contact">
                     <li class="menu__item">
                         <a href="../index.html" class="menu__link menu">Inicio</a>
                     </li>
@@ -38,34 +38,194 @@
         </nav>
     </header>
     <main id="page-main" class="page-main page-main--contact">
-        <div class="container__amount">
-            
-        </div>
         <section class="main-section__tours">
-            <h2 class="section-tour__tittle">Tours para toda la familia</h2>
+            <div class="section-tours__header">
+                <h2 class="section-tour__tittle">Tours para toda la familia</h2>
+                <div class="container__amount">
+                    <img class="amount-tour__icon" src="../assets/images/shopping_cart_black_48dp.svg"
+                        alt="Carrito de compras" />
+                    <p id="amount-tours" class="amout-tours">$240</p>
+                </div>
+            </div>
+            <h3 class="section__article-tittle">Tours con descuento</h3>
             <article class="section-tour__article">
-                <h3>Tours de Descuento</h3>
-                <div id="holaa" class="article__main-container">
+                <div class="article__main-container">
                     <div class="article__first-row">
-
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
                     </div>
                     <div class="article__second-row">
-
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                            <label class="label__cost-before">₡25000</label>
+                            <label class="label__cost-after">₡15000</label>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de personas:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                            <label class="label__cost-before">₡25000</label>
+                            <label class="label__cost-after">₡15000</label>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de personas:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                            <label class="label__cost-before">₡25000</label>
+                            <label class="label__cost-after">₡15000</label>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de personas:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
                     </div>
                 </div>
             </article>
+            <h3 class="section__article-tittle">Tours Familiares</h3>
             <article class="section-tour__article">
-                <h3>Tours Familiares</h3>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                            <label>Para 4 personas</label>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de tours:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                            <label>Para 6 personas</label>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de tours:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                            <label>Para 2 personas</label>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de tours:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
             </article>
+            <h3 class="section__article-tittle">Tours Individuales</h3>
             <article class="section-tour__article">
-                <h3>Tours Individuales</h3>
-
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de tours:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de tours:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="article__main-container">
+                    <div class="article__first-row">
+                        <img class="article__image-tour"
+                            src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-1873284-media_library/original/d448f560-6ed3-4377-a85b-70ca9f584309.jpeg?im_w=240"
+                            alt="lol" />
+                    </div>
+                    <div class="article__second-row">
+                        <div class="second-row__description">
+                            <p>Jaco Waterfalls and Hiking Adventures</p>
+                        </div>
+                        <div class="secod-row__input">
+                            <label class="tour__label">Cantidad de tours:</label>
+                            <input class="tour__input" name="movieDuration" />
+                            <input class="tour__button" type="button" value="Agregar al carrito">
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
 
     <footer class="page-footer">
-        <div class="footer-container__bottom-message footer-container__bottom-message--contact">
+        <div class="
+          footer-container__bottom-message
+          footer-container__bottom-message--contact
+        ">
             <p>
                 <small>2021 Juan Carlos Sequeira Piedra | Fines educativos</small>
             </p>

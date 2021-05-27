@@ -682,9 +682,13 @@ body {
   .button-open {
     display: none;
   }
+
+  .page-main--tours{
+    margin: 0;
+  }
 }
 
-/*@media (max-width: 799px) and (min-width: 600px) {
+@media (max-width: 799px) and (min-width: 600px) {
   .page-nav__hyperlinks {
     flex: 1;
   }
@@ -745,4 +749,4 @@ body {
   .modal-image {
     height: 50%;
   }
-} */
+} 

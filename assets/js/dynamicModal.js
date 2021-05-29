@@ -14,9 +14,10 @@ function init() {
         initVar()
         modifyModalContainer();
         modifyModalCloser();
-        modifyTittleModal("Lapa de Costa Rica");
-        modifyModalImage(document.getElementById('aside_first_img').getAttribute("src"), "Lapa de Turrubares");
-        modifyInformationModel("Informacion basica de la lapa de turrubares en cara")
+        modifyTittleModal("Lapa Roja (Ara macao)");
+        modifyModalImage(document.getElementById('aside_first_img').getAttribute("src"), "Lapa Roja (Ara macao) obtenido de https://es.m.wikipedia.org/wiki/Archivo:Ara_Macao_(Yarinacocha,_Pucallpa).jpg");
+        modifyInformationModel("La guacamaya roja,​ guacamayo macao o guacamaya bandera (Ara macao) s una especie de ave perteneciente a la familia de los psitácidos. Además, es una de las nueve especies existentes del género Ara, del cual es una de las de mayor tamaño, pues llega a alcanzar 90,7 cm de longitud y 1 kg de peso. Se distingue por su plumaje de colores vivos, que es principalmente rojo escarlata, complementado con algunas plumas azules y amarillas con verde que inician desde las alas hasta su cola.")
+        modifyReferencesModel("https://es.m.wikipedia.org/wiki/Ara_macao");
         modifyPrincipalModal();
         document.getElementById('page-body').appendChild(modalContainer);
         addListenerToClose();
@@ -26,9 +27,10 @@ function init() {
         initVar();
         modifyModalContainer();
         modifyModalCloser();
-        modifyTittleModal("Lapa de Costa Rica");
-        modifyModalImage(document.getElementById('aside_second_img').getAttribute("src"), "Lapa de Turrubares");
-        modifyInformationModel("Informacion basica de la lapa de turrubares en cara");
+        modifyTittleModal("Garrobo (Ctenosaura similis)");
+        modifyModalImage(document.getElementById('aside_second_img').getAttribute("src"), "Iguana rayada (Ctenosaura similis)");
+        modifyInformationModel("La iguana rayada (Ctenosaura similis), también conocida como garrobo, es un iguánido centroamericano y mexicano presente desde Panamá hasta el istmo de Tehuantepec en México. Habita en climas calientes y húmedos, secos, y templados y húmedos; asimismo, en altitudes desde cerca del nivel del mar hasta moderadas. ");
+        modifyReferencesModel("https://es.m.wikipedia.org/wiki/Ctenosaura_similis");
         modifyPrincipalModal();
         document.getElementById('page-body').appendChild(modalContainer);
         addListenerToClose();
@@ -92,6 +94,16 @@ function modifyInformationModel(information) {
     addChldToPrincipalModal(modalInformation);
 }
 
+function modifyReferencesModel(link){
+    setAttributeToElement(modalReferences, "class", "references-container__link--modal");
+    setAttributeToElement(modalReferencesLink, "class", "references__link");
+    setAttributeToElement(modalReferencesLink, "href", link);
+    setAttributeToElement(modalReferencesLink, "target", "_blank");
+    modalReferencesLink.appendChild(addTextNode("Referencias"));
+    modalReferences.appendChild(modalReferencesLink);
+    addChldToPrincipalModal(modalReferences);
+}
+
 function modifyModalCloser() {
     setAttributeToElement(modalClose, "class", "close");
     setAttributeToElement(modalClose, "id", "modal_close");
@@ -106,4 +118,6 @@ function initVar() {
     modalTittle = document.createElement('h2');
     modalImage = document.createElement('img');
     modalInformation = document.createElement('p');
+    modalReferences = document.createElement('div');
+    modalReferencesLink = document.createElement('a');
 }

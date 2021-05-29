@@ -1,318 +1,569 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Juan Carlos Sequeira Piedra" />
-    <meta name="keywords" content="flora, fauna, naturaleza, Turrubares, tours" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/headerAnimation.js"></script>
-    <script type="text/javascript" src="assets/js/updateMainContent.js"></script>
-    <script type="text/javascript" src="assets/js/dynamicModal.js"></script>
-    <title>Flora y Fauna - Turrubares</title>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Juan Carlos Sequeira Piedra" />
+        <meta name="keywords" content="flora, fauna, naturaleza, Turrubares,
+            tours" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/headerAnimation.js"></script>
+        <script type="text/javascript" src="assets/js/updateMainContent.js"></script>
+        <script type="text/javascript" src="assets/js/dynamicModal.js"></script>
+        <title>Flora y Fauna - Turrubares</title>
+    </head>
 
-<body id="page-body" class="page-body">
-    <header class="page-header">
-        <nav class="header__nav">
-            <div class="nav-container__principal">
-                <div class="container-logo">
-                    <a class="container-logo__link" href="index.html">
-                        <img class="container-logo__image" alt="Logo principal de la pagina web"
-                            src="assets/images/main-logo.svg" />
-                    </a>
+    <body id="page-body" class="page-body">
+        <header class="page-header">
+            <nav class="header__nav">
+                <div class="nav-container__principal">
+                    <div class="container-logo">
+                        <a class="container-logo__link" href="index.html">
+                            <img class="container-logo__image" alt="Logo
+                                principal de la pagina web"
+                                src="assets/images/main-logo.svg" />
+                        </a>
+                    </div>
+                    <span class="material-icons button-open"> menu</span>
+                    <ul class="nav__menu">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">Inicio</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="layouts/tours.html" class="menu__link">Nuestros
+                                Tours</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="layouts/contact.html" class="menu__link">Contactanos</a>
+                        </li>
+                    </ul>
                 </div>
-                <span class="material-icons button-open"> menu</span>
-                <ul class="nav__menu">
-                    <li class="menu__item">
-                        <a href="index.html" class="menu__link">Inicio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="layouts/tours.html" class="menu__link">Nuestros Tours</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="layouts/contact.html" class="menu__link">Contactanos</a>
-                    </li>
-                </ul>
-            </div>
-            <canvas id="canvas" class="header__animation" height="200px"></canvas>
+                <canvas id="canvas" class="header__animation" height="200px"></canvas>
+            </nav>
+        </header>
+        <nav id="nav-hyperlinks" class="page-nav__hyperlinks">
+            <ul class="nav__menu nav__menu--hyperlinks">
+                <li class="menu__item menu__list--hyperlinks">
+                    <a id="link_history" href="#canvas" class="menu__link
+                        menu__link--hyperlinks">Historia</a>
+                </li>
+                <li class="menu__item menu__list--hyperlinks">
+                    <a id="link_flora" href="#canvas" class="menu__link
+                        menu__link--hyperlinks">Flora</a>
+                </li>
+                <li class="menu__item menu__list--hyperlinks">
+                    <a id="link_fauna" href="#canvas" class="menu__link
+                        menu__link--hyperlinks">Fauna</a>
+                </li>
+            </ul>
         </nav>
-    </header>
-    <nav id="nav-hyperlinks" class="page-nav__hyperlinks">
-        <ul class="nav__menu nav__menu--hyperlinks">
-            <li class="menu__item menu__list--hyperlinks">
-                <a id="link_history" href="#canvas" class="menu__link menu__link--hyperlinks">Historia</a>
-            </li>
-            <li class="menu__item menu__list--hyperlinks">
-                <a id="link_flora" href="#canvas" class="menu__link menu__link--hyperlinks">Flora</a>
-            </li>
-            <li class="menu__item menu__list--hyperlinks">
-                <a id="link_fauna" href="#canvas" class="menu__link menu__link--hyperlinks">Fauna</a>
-            </li>
-        </ul>
-    </nav>
-    <main id="page-main" class="page-main">
-        <section id="section_history" class="section__main">
-            <h2 id="section_tittle" class="section__tittle">
-                Cantón de Turrubares
-            </h2>
-            <article id="section_article_history" class="section__article">
-                <img class="img__principal"
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Escudo_de_Turrubares.png"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information">
-                    Turrubares es el cantón número 16 de la provincia de San José, en
-                    Costa Rica. Limita con el cantón de Atenas por el norte, con los
-                    cantones de Orotina y Garabito por el oeste, con el cantón de
-                    Parrita por el sur, con el cantón de Puriscal por el este y con el
-                    cantón de Mora por el noreste, y cuenta con una extensión
-                    territorial de 415,29 km².2​ Su cabecera es San Pablo, con categoría
-                    de ciudad. El cantón cuenta con 6.532 habitantes, de acuerdo con la
-                    última proyección demográfica del INEC.3​ El cantón se caracteriza
-                    por su riqueza natural dada principalmente por el parque nacional
-                    Carara, el cual abarca una gran parte del sur de Turrubares. También
-                    se caracteriza por ser el cantón menos poblado de Costa Rica y por
-                    estar entre los que tienen menor densidad de población (15,73
-                    hab/km²). Turrubares cuenta con la esperanza de vida más alta del
-                    país (85,5 años) y un Índice de Desarrollo Humano de 0,751,
-                    clasificado como alto.
-                </p>
-            </article>
-        </section>
-        <section id="section_flora" class="section__main">
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Planta 1</h3>
-                <img class="img__principal"
-                    src="https://u9b4k6n8.stackpathcdn.com/wp-content/uploads/2013/07/perezoso.jpg"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
-                    doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
-                    dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Reiciendis, molestiae sint. Id
-                    molestias delectus reprehenderit dolores nihil voluptatem rem,
-                    officiis et sed, corporis inventore consequatur deleniti placeat
-                    maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Similique magnam, dolor ducimus, exercitationem
-                    veritatis sint voluptatem tenetur libero ipsam modi, placeat
-                    suscipit quisquam iure officia eius nulla atque tempore aspernatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                    nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
-                    facere provident distinctio quasi laborum debitis temporibus est
-                    vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
-                    consequatur necessitatibus aliquam exercitationem quos eaque
-                    incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
-                    ducimus ratione autem.</p>
-            </article>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">
-                   Planta 2
-                </h3>
-                <img class="img__principal"
-                    src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/venado-cola-blanca-cr-600x478.jpg"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
-                    doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
-                    dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Reiciendis, molestiae sint. Id
-                    molestias delectus reprehenderit dolores nihil voluptatem rem,
-                    officiis et sed, corporis inventore consequatur deleniti placeat
-                    maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Similique magnam, dolor ducimus, exercitationem
-                    veritatis sint voluptatem tenetur libero ipsam modi, placeat
-                    suscipit quisquam iure officia eius nulla atque tempore aspernatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                    nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
-                    facere provident distinctio quasi laborum debitis temporibus est
-                    vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
-                    consequatur necessitatibus aliquam exercitationem quos eaque
-                    incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
-                    ducimus ratione autem.
-                </p>
-            </article>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Planta 3</h3>
-                <img class="img__principal"
-                    src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/tepezcuintle-cr-600x450.jpg"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
-                    doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
-                    dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Reiciendis, molestiae sint. Id
-                    molestias delectus reprehenderit dolores nihil voluptatem rem,
-                    officiis et sed, corporis inventore consequatur deleniti placeat
-                    maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Similique magnam, dolor ducimus, exercitationem
-                    veritatis sint voluptatem tenetur libero ipsam modi, placeat
-                    suscipit quisquam iure officia eius nulla atque tempore aspernatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                    nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
-                    facere provident distinctio quasi laborum debitis temporibus est
-                    vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
-                    consequatur necessitatibus aliquam exercitationem quos eaque
-                    incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
-                    ducimus ratione autem.</p>
-            </article>
-        </section>
-        <section id="section_fauna" class="section__main">
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Perezoso</h3>
-                <img class="img__principal"
-                    src="https://u9b4k6n8.stackpathcdn.com/wp-content/uploads/2013/07/perezoso.jpg"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
-                    doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
-                    dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Reiciendis, molestiae sint. Id
-                    molestias delectus reprehenderit dolores nihil voluptatem rem,
-                    officiis et sed, corporis inventore consequatur deleniti placeat
-                    maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Similique magnam, dolor ducimus, exercitationem
-                    veritatis sint voluptatem tenetur libero ipsam modi, placeat
-                    suscipit quisquam iure officia eius nulla atque tempore aspernatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                    nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
-                    facere provident distinctio quasi laborum debitis temporibus est
-                    vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
-                    consequatur necessitatibus aliquam exercitationem quos eaque
-                    incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
-                    ducimus ratione autem.</p>
-            </article>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">
-                    Venado cola blanca
-                </h3>
-                <img class="img__principal"
-                    src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/venado-cola-blanca-cr-600x478.jpg"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
-                    doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
-                    dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Reiciendis, molestiae sint. Id
-                    molestias delectus reprehenderit dolores nihil voluptatem rem,
-                    officiis et sed, corporis inventore consequatur deleniti placeat
-                    maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Similique magnam, dolor ducimus, exercitationem
-                    veritatis sint voluptatem tenetur libero ipsam modi, placeat
-                    suscipit quisquam iure officia eius nulla atque tempore aspernatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                    nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
-                    facere provident distinctio quasi laborum debitis temporibus est
-                    vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
-                    consequatur necessitatibus aliquam exercitationem quos eaque
-                    incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
-                    ducimus ratione autem.
-                </p>
-            </article>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Tepezcuintles</h3>
-                <img class="img__principal"
-                    src="https://cdn.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/mamiferos-selva/tepezcuintle-cr-600x450.jpg"
-                    alt="Escudo del cantón de Turrubares" />
-                <p class="article__information"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur rerum nisi ipsa quis corrupti omnis dolore! Veniam
-                    doloremque voluptate consectetur nemo nobis mollitia? Debitis qui
-                    dolores unde, quod soluta laudantium. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Reiciendis, molestiae sint. Id
-                    molestias delectus reprehenderit dolores nihil voluptatem rem,
-                    officiis et sed, corporis inventore consequatur deleniti placeat
-                    maxime illo suscipit! Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Similique magnam, dolor ducimus, exercitationem
-                    veritatis sint voluptatem tenetur libero ipsam modi, placeat
-                    suscipit quisquam iure officia eius nulla atque tempore aspernatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                    nulla deleniti, enim nostrum voluptate soluta molestias, deserunt
-                    facere provident distinctio quasi laborum debitis temporibus est
-                    vitae quaerat, adipisci recusandae? Adipisci. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Eos illum, iusto obcaecati natus
-                    consequatur necessitatibus aliquam exercitationem quos eaque
-                    incidunt, deleniti accusantium eligendi delectus! Vel maxime magnam
-                    ducimus ratione autem.</p>
-            </article>
-        </section>
-    </main>
-    <aside class="page-aside">
-        <div class="aside-container">
-            <img id="aside_first_img" class="aside-containe__image" src="https://cdn.pixabay.com/photo/2020/01/22/15/05/parrot-4785502_1280.jpg" alt="Lapa roja"/>
-            <a id="aside_first_link" class="aside_link">Lapa Roja - Guacamaya</a>
-        </div>
-        <div class="aside-container">
-            <img id="aside_second_img" class="aside-containe__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tika2009Jan24.jpg/230px-Tika2009Jan24.jpg" alt="Tigrillo"/>
-            <a id="aside_second_link" class="aside_link">Oncilla (Leopardus tigrinus)</a>
-        </div>
-    </aside>
-    <footer class="page-footer">
-        <div class="footer__first-row">
-            <div class="footer-container footer-container__tourist-sites">
-                <ul class="footer__hyperlinks">
-                    <li class="menu__item menu__item--tittle">
-                        <h5 class="menu__list--resources-tittle">Sitios turisticos</h5>
-                    </li>
-                    <li class="menu__item menu__list--tourist-sites">
-                        <a href="http://www.sinac.go.cr/ES/ac/acopac/pnc/Paginas/default.aspx"
-                            class="menu__link menu__link--footer">Parque Nacional Carara</a>
-                    </li>
-                    <li class="menu__item menu__list--tourist-sites">
-                        <a href="https://www.villalapas.com/" class="menu__link menu__link--footer">Villa Lapas</a>
-                    </li>
-                </ul>
+        <main id="page-main" class="page-main">
+            <section id="section_history" class="section__main">
+                <h2 id="section_tittle" class="section__tittle">
+                    Cantón de Turrubares
+                </h2>
+                <article id="section_article_history" class="section__article">
+                    <a
+                        href="https://es.wikipedia.org/wiki/Cant%C3%B3n_de_Turrubares#/media/Archivo:Escudo_de_Turrubares.png"><img
+                            class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Escudo_de_Turrubares.png"
+                            alt="Escudo del cantón de Turrubares obtenido de
+                            wikipedia" /></a>
+                    <p class="article__information">
+                        Turrubares es el cantón número 16 de la provincia de San
+                        José, en
+                        Costa Rica. Limita con el cantón de Atenas por el norte,
+                        con los
+                        cantones de Orotina y Garabito por el oeste, con el
+                        cantón de
+                        Parrita por el sur, con el cantón de Puriscal por el
+                        este y con el
+                        cantón de Mora por el noreste, y cuenta con una
+                        extensión
+                        territorial de 415,29 km². <br />
+                        Su cabecera es San Pablo, con categoría de ciudad. El
+                        cantón cuenta
+                        con 6.532 habitantes, de acuerdo con la última
+                        proyección
+                        demográfica del INEC.3​ El cantón se caracteriza por su
+                        riqueza
+                        natural dada principalmente por el parque nacional
+                        Carara, el cual
+                        abarca una gran parte del sur de Turrubares. También se
+                        caracteriza
+                        por ser el cantón menos poblado de Costa Rica y por
+                        estar entre los
+                        que tienen menor densidad de población (15,73 hab/km²).
+                        Turrubares
+                        cuenta con la esperanza de vida más alta del país (85,5
+                        años) y un
+                        Índice de Desarrollo Humano de 0,751, clasificado como
+                        alto.
+                    </p>
+                    <h4 class="article__information">Historia</h4>
+                    <p class="article__information">
+                        Las primeras ocupaciones recordadas de este territorio
+                        fueron por indígenas del antiguo Reino Huetar de
+                        Occidente, el cual se encontraba encabezado por el
+                        Cacique Garabito. La región constituía uno de los
+                        principales cacicazgos del Reino, encabezada por el
+                        Cacique Pacaca, el cual gozaba de autonomía que le
+                        permitía desarrollarse plenamente, y mantenía un
+                        conjunto de aldeas que le eran tributarias.<br>
+                        <br> Durante la Conquista, el primer español que atravesó la
+                        región de Turrubares fue Juan Vázquez de Coronado, en
+                        1561. El conquistador atraviesa la región antes de
+                        internarse en el Valle Central y de fundar la ciudad de
+                        Garcimuñóz.<br>
+                        <br>En 1601, se realiza la apertura del "Camino de Mulas",
+                        una ruta que permitió el comercio de mulas entre Costa
+                        Rica y las Ferias de Portobelo, un punto de encuentro de
+                        expediciones comerciales provenientes de ambos extremos
+                        de los territorios del Reino de España llevado a cabo en
+                        Panamá. Turrubares funcionó como un punto de paso.<br>
+                        <br>En 1840, en el contexto de una organización
+                        administrativa del Estado que impulsó el gobierno de
+                        Braulio Carrillo Colina, se divide a San José en un
+                        total de 26 cuarteles, entre ellos el cuartel de Escazú
+                        y Pacaca.<br>
+                        <br>En la Constitución Política del 30 de noviembre de 1848,
+                        se estableció una nueva división política y
+                        administrativa, que contempló la nomenclatura de
+                        provincias, cantones y distritos parroquiales. De entre
+                        los distritos parroquiales del cantón de Escazú y
+                        Pacaca, se encontraba el muy pequeño poblado de San
+                        Pablo de Puriscal (hoy de Turrubares).
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.wikipedia.org/w/index.php?title=Cant%C3%B3n_de_Turrubares&oldid=135673514"
+                        target="”_blank”">Referencias</a>
+                </div>
+            </section>
+            <section id="section_flora" class="section__main">
+                <article id="section_article" class="section__article">
+                    <h3 id="article_tittle" class="article__tittle">Acacia
+                        collinsii</h3>
+                    <a
+                        href="https://es.m.wikipedia.org/wiki/Archivo:Acacia_collinsii4.jpg"
+                        target="_blank"><img
+                            class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/16/Acacia_collinsii4.jpg"
+                            alt="Planta Acacia collinsii - obtenido de
+                            https://es.m.wikipedia.org/wiki/Archivo:Acacia_collinsii4.jpg"
+                            /></a>
+                    <p class="article__information">
+                        <b>Acacia collinsii</b> es una especie de árbol caduco
+                        originario de
+                        México, donde se encuentra en Chiapas y Yucatán, entre
+                        Chicoasen y
+                        San Fernandino. Con una distribución que abarca desde
+                        México hasta
+                        Colombia.
+                    </p>
+                    <h4 class="article__information">Descripción</h4>
+                    <p class="article__information">
+                        Es un arbusto o pequeño árbol que alcanza un tamaño de
+                        hasta 5 m de altura, tiene espinas rectas y
+                        huecas. Las hojas están divididas como plumas, son
+                        caducifolias de color verde. Las flores se
+                        encuentran agrupadas en una inflorescencia en forma de
+                        espiga de color blanco, y los frutos son
+                        vainas que miden hasta 5 cm de largo.
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.m.wikipedia.org/wiki/Acacia_collinsii"
+                        target="”_blank”">Referencias</a>
+                </div>
+                <article id="section_article" class="section__article">
+                    <h3 id="article_tittle" class="article__tittle">
+                        Arbol de Guanacaste(Enterolobium cyclocarpum)
+                    </h3>
+                    <a
+                        href="https://es.m.wikipedia.org/wiki/Archivo:%C3%81rbol_de_Guancaste.jpg"
+                        target="_blank"><img
+                            class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%C3%81rbol_de_Guancaste.jpg/800px-%C3%81rbol_de_Guancaste.jpg"
+                            alt="Arbol de Guanacaste - obtenido de
+                            https://es.m.wikipedia.org/wiki/Archivo:%C3%81rbol_de_Guancaste.jpg"
+                            /></a>
+                    <p class="article__information">
+                        El <b>Enterolobium cyclocarpum</b> es una especie de
+                        árbol
+                        perteneciente al orden de los Fabales e integrante de la
+                        familia
+                        Fabaceae. Es un árbol nativo de América, de regiones
+                        tropicales y
+                        templadas cálidas. Constituye en una de las dos especies
+                        conocidas
+                        como "oreja de elefante" en varios países americanos,
+                        huanacaxtle,
+                        parota, oreja de elefante en México, conacaste en El
+                        Salvador,
+                        Guatemala, guanacaste en Honduras, Nicaragua y Costa
+                        Rica, corotú en
+                        Panamá y otras partes, orejero, piñón de oreja o
+                        caracaro en
+                        Colombia y carocaro en Venezuela. Es una especie
+                        maderable y a veces
+                        se usa como árbol de ornato. Es el árbol nacional de
+                        Costa Rica
+                        desde el 31 de agosto de 1959, donde se le identifica
+                        además como
+                        símbolo de la provincia de Guanacaste.
+                    </p>
+                    <h4 class="article__information">Descripción</h4>
+                    <p class="article__information">
+                        Es un árbol muy alto y muy ancho también se relaciona
+                        con la
+                        presencia de un río debajo de sus grandes troncos por lo
+                        que a
+                        menudo tiene la apariencia de un samán, está relacionado
+                        con la
+                        presencia de un río debajo de sus troncos. del que se
+                        diferencia por
+                        ser más alto y abierto, es decir, menos achaparrado y
+                        también por
+                        sus frutos. El fruto en legumbre tiene forma de círculo
+                        helicoidal,
+                        de modo que el ápice toca casi con la base. El tronco
+                        puede
+                        alcanzar 16 dm de ancho, y hay ejemplares de 4 m de
+                        diámetro.
+                        Alcanza alturas de 16 a 28 m con una gran expansión del
+                        ramaje.
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.m.wikipedia.org/wiki/Enterolobium_cyclocarpum"
+                        target="”_blank”">Referencias</a>
+                </div>
+                <article id="section_article" class="section__article">
+                    <h3 id="article_tittle" class="article__tittle">
+                        Palo de hormigo(Platymiscium dimorphandrum)
+                    </h3>
+                    <a
+                        href="https://es.m.wikipedia.org/wiki/Archivo:Hormigo.png"
+                        target="_blank"><img
+                            class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Hormigo.png/348px-Hormigo.png"
+                            alt="Palo de Hormigo - obtenido de
+                            https://es.m.wikipedia.org/wiki/Archivo:Hormigo.png"
+                            /></a>
+                    <p class="article__information">
+                        <b>Platymiscium dimorphandrum</b>, <b>hormigo</b> o
+                        <b>cristóbal</b>, es una especie de planta con flor
+                        leguminosa de la
+                        subfamilia Faboideae. Es endémica de Belice, Trinidad y
+                        Tobago,
+                        Venezuela, Colombia, Costa Rica, Guatemala, Honduras,
+                        México y
+                        Nicaragua.
+                    </p>
+                    <h4 class="article__information">Descripción</h4>
+                    <p class="article__information">
+                        Es un árbol que alcanza 35 m de altura, con el tronco de
+                        unos 8 dm
+                        de diámetro, recto, con ramas ascendentes altas y copa
+                        irregular.
+                        Corteza externa marcada, hendiduras alargadas, escamosa,
+                        grisácea
+                        clara a castaño oscuro. Sus ramas con cicatrices de
+                        hojas suelen ser
+                        huecas y habitadas por hormigas.<br />
+                        <br />Las hojas son agrupadas de 5-7, de 7 a 35 cm de
+                        largo (incluye
+                        pecíolo y base de la hoja compuesta) con márgenes
+                        enteros, ápice
+                        fino, verdosas brillantes en el haz, verde amarillentas
+                        o pálidas en
+                        el envés. Es caducifolia entre abril y mayo.<br />
+                        <br />Las flores son en racimos de 5 a 9 cm de largo,
+                        amarillentas,
+                        con pétalos de 7 mm de largo.
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.m.wikipedia.org/wiki/Platymiscium_dimorphandrum"
+                        target="”_blank”">Referencias</a>
+                </div>
+            </section>
+            <section id="section_fauna" class="section__main">
+                <article id="section_article" class="section__article">
+                    <h3 id="article_tittle" class="article__tittle">Saino(Pecarí
+                        barbiblanco)</h3>
+                    <a
+                        href="https://es.m.wikipedia.org/wiki/Archivo:Tayassu_pecari_-Brazil-8.jpg"
+                        target="_blank"><img
+                            class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tayassu_pecari_-Brazil-8.jpg/763px-Tayassu_pecari_-Brazil-8.jpg"
+                            alt="Animal Saino obtenido de
+                            https://es.m.wikipedia.org/wiki/Archivo:Tayassu_pecari_-Brazil-8.jpg"
+                            /></a>
+                    <p class="article__information">
+                        <b>Tayassu pecari</b>, llamado comúnmente <b>pecarí
+                            barbiblanco</b>, o <b>coyámel</b> (nahuatlismo
+                        de coyametl),
+                        es una especie de mamífero artiodáctilo de la familia
+                        Tayassuidae.
+                    </p>
+                    <h4 class="article__information">Descripción</h4>
+                    <p class="article__information">
+                        Se caracteriza por una mancha clara, en forma de barba,
+                        en la base de la boca o en torno a los
+                        labios. Tiene una altura promedio, en la cruz, de 55 cm,
+                        y una longitud de 90 a 139 cm. El
+                        adulto pesa entre 25 y 40 kg.
+                    </p>
+                    <h4 class="article__information">Comportamiento</h4>
+                    <p class="article__information">
+                        Es un animal diurno y vive en inmensas manadas, de 50 a
+                        300 individuos. En ciertas épocas del año,
+                        en algunas zonas, las manadas grandes se dividen en
+                        grupos más pequeños de acuerdo con la
+                        distribución y abundancia de los alimentos o la
+                        presencia de depredadores.<br>
+                        <br>Hay evidencia de intercambios de individuos entre
+                        manadas vecinas y de apareamientos entre macho
+                        y
+                        hembra de diferente manada. La gestación dura
+                        aproximadamente 250 días, después de los cuales
+                        nacen una o dos crías.<br>
+                        <br>Es omnívoro y, aunque prefiere consumir frutos,
+                        también se alimenta de raíces, tubérculos,
+                        nueces, hierba e invertebrados.
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.m.wikipedia.org/wiki/Tayassu_pecari"
+                        target="”_blank”">Referencias</a>
+                </div>
+                <article id="section_article" class="section__article">
+                    <h3 id="article_tittle" class="article__tittle">
+                        Perezoso bayo(Bradypus variegatus)
+                    </h3>
+                    <a
+                        href="https://es.m.wikipedia.org/wiki/Archivo:Bradypus.jpg"
+                        target="_blank"><img
+                            class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bradypus.jpg/450px-Bradypus.jpg"
+                            alt="Perezoso bayo obtenido de
+                            https://es.m.wikipedia.org/wiki/Archivo:Bradypus.jpg"
+                            /></a>
+                    <p class="article__information">
+                        El <b>Perezoso bayo</b> (<b>Bradypus variegatus</b>) es
+                        una especie de perezoso tridáctilo de la
+                        familia Bradipodidae, perteneciente al orden Pilosa,
+                        propia de Centroamérica y Sudamérica.<br>
+                        <br>Es la especie más distribuida y común del grupo,
+                        hallándose en muchos y diferentes ambientes,
+                        incluyendo selvas siempreverdes, bosques secos y áreas
+                        naturales profundamente perturbadas. Es
+                        solitario, nocturno y diurno, alimentándose de hojas de
+                        muchas especies de árboles.<br>
+                        <br>La hembra emite un lamento fuerte, estridente,
+                        durante la estación de apareamiento para atraer
+                        machos. Es un alarido que suena onomatopeycivamente como
+                        un "ay ay" y por tal motivo ha recibido
+                        este nombre de parte de varias etnias que habitan o
+                        habitaban su hábitat.
+                    </p>
+                    <h4 class="article__information">Descripción</h4>
+                    <p class="article__information">
+                        Es un animal mediano, con una longitud entre 400 y 770
+                        mm, incluyendo la cabeza, la cual es redonda
+                        con la nariz achatada, con una trompa pequeña y oscura,
+                        descrita como similar a la de un cerdo o
+                        mono sonriente. Las orejas no son visibles. El cuerpo
+                        posee aspecto rechoncho, con las
+                        extremidades anteriores más largas que las posteriores.
+                        Las patas delanteras poseen cinco dedos,
+                        tres de los cuales tienen garras prominentes. Posee
+                        pelaje de color gris a marrón o beis. Sobre los
+                        ojos presenta una máscara oscura, y posee pelaje blanco
+                        sobre la frente. El pelo de la cabeza puede
+                        ser más corto y denso. El macho presenta una mancha de
+                        color anaranjado con una línea central negra,
+                        o bien, manchas negras, sobre la parte media del lomo.
+                        La cola es muy pequeña, entre 40 y 90 mm.
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.m.wikipedia.org/wiki/Bradypus_variegatus"
+                        target="”_blank”">Referencias</a>
+                </div>
+                <article id="section_article" class="section__article">
+                    <h3 id="article_tittle" class="article__tittle">Terciopelo(Bothrops
+                        asper)</h3>
+                    <a
+                        href="https://es.m.wikipedia.org/wiki/Archivo:Bothrops_asper_(Panama)_coiled.jpg"
+                        target="_blank"><img class="img__principal"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bothrops_asper_%28Panama%29_coiled.jpg/800px-Bothrops_asper_%28Panama%29_coiled.jpg"
+                            alt="Serpiente Terciopelo obtenido de
+                            https://es.m.wikipedia.org/wiki/Archivo:Bothrops_asper_(Panama)_coiled.jpg"
+                            /></a>
+                    <p class="article__information">
+                        La serpiente terciopelo (Bothrops asper) es una especie
+                        de serpiente crotalina venenosa que se
+                        encuentra en América Central y el norte de Sudamérica.
+                        Se halla en un amplio rango de hábitats
+                        de tierras altas, a menudo cerca de asentamientos
+                        humanos. Es una especie grande y nerviosa, y es la
+                        principal responsable de incidentes por mordeduras de
+                        serpiente dentro de su zona de
+                        distribución.​ No se reconocen subespecies actualmente.
+                    </p>
+                    <h4 class="article__information">Descripción</h4>
+                    <p class="article__information">
+                        Bothrops asper es una de las especies de serpientes con
+                        mayor dimorfismo sexual. Las serpientes de
+                        ambos sexos nacen con el mismo tamaño, pero entre los 7
+                        a 12 meses de edad las hembras comienzan a
+                        crecer más rápidamente que los machos. En general, los
+                        adultos miden entre 140-180 cm. Los machos
+                        nunca alcanzan más de 195 cm de longitud, mientras que
+                        las hembras tienen un tamaño promedio de 185
+                        cm, con una longitud máxima confirmada de 250 cm. Las
+                        hembras tienen cuerpos gruesos y las más
+                        grandes pueden pesar hasta 6 kg, aunque se han informado
+                        ejemplares de mayor peso. La cabeza de las
+                        hembras es dos o tres veces más grande que la de los
+                        machos en proporción a su tamaño, y sus
+                        colmillos también son proporcionalmente más grandes
+                        (típicamente 2,5 cm).​<br>
+
+                        <br>El patrón de color se asemeja al de Bothrops atrox:
+                        rayas diagonales y diamantes de varios tonos
+                        de
+                        marrón. La parte inferior de la cabeza es amarillo
+                        pálido. Las serpientes recién nacidas son de
+                        color más brillante y los machos juveniles tienen la
+                        punta de la cola amarilla.<br>
+
+                        <br>A cada lado de la cabeza tiene una foseta loreal
+                        ubicada entre el ojo y el hocico, que sirve
+                        para
+                        detectar presas que emiten radiación infrarroja. La
+                        foseta loreal es una característica compartida
+                        con las demás víboras de foseta.
+                    </p>
+                </article>
+                <div class="references-container__link">
+                    <a class="references__link"
+                        href="https://es.m.wikipedia.org/wiki/Bothrops_asper"
+                        target="_blank">Referencias</a>
+                </div>
+            </section>
+        </main>
+        <aside class="page-aside">
+            <h4 class="aside__tittle">Animales populares</h4>
+            <div class="aside-container">
+                <a href="https://es.wikipedia.org/wiki/Ara_macao" target="_blank"><img id="aside_first_img" class="aside-containe__image"
+                    src="https://cdn.pixabay.com/photo/2020/01/22/15/05/parrot-4785502_1280.jpg"
+                    alt="Lapa roja" /></a>
+                <a id="aside_first_link" class="aside_link">Lapa Roja (Ara macao)</a>
             </div>
-            <div class="footer-container footer-container__local-transport">
-                <ul class="footer__hyperlinks">
-                    <li class="menu__item menu__item--tittle">
-                        <h5 class="menu__list--resources-tittle">Transporte local</h5>
-                    </li>
-                    <li class="menu__item menu__list--local-transport">
-                        <a href="https://www.kolbi1155.com/costa-rica/negocios/asociacion-de-taxis-de-jaco/jaco-garabito"
-                            class="menu__link menu__link--footer">Taxis Jaco</a>
-                    </li>
-                    <li class="menu__item menu__list--local-transport">
-                        <a href="https://www.transportesjacoruta655.com/"
-                            class="menu__link menu__link--footer">Transporte Jaco</a>
-                    </li>
-                    <li class="menu__item menu__list--local-transport">
-                        <a href="#" class="menu__link menu__link--footer">Fauna</a>
-                    </li>
-                </ul>
+            <div class="aside-container">
+                <a class href="https://es.m.wikipedia.org/wiki/Ctenosaura_similis" target="_blank"><img id="aside_second_img" class="aside-containe__image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/CtenosauraSimilis.jpg/960px-CtenosauraSimilis.jpg"
+                    alt="Garrobo" /></a>
+                <a id="aside_second_link" class="aside_link">Garrobo (Ctenosaura)</a>
             </div>
-            <div class="footer-container footer-container__resources">
-                <ul class="footer__hyperlinks">
-                    <li class="menu__item menu__item--tittle">
-                        <h5 class="menu__list--resources-tittle">Enlaces de interes</h5>
-                    </li>
-                    <li class="menu__item menu__list--resources">
-                        <a href="http://www.crbio.cr/crbio/?page_id=61&lang=en"
-                            class="menu__link menu__link--footer">CRBio</a>
-                    </li>
-                    <li class="menu__item menu__list--resources">
-                        <a href="https://www.sirefor.go.cr/" class="menu__link menu__link--footer">SIREFOR</a>
-                    </li>
-                    <li class="menu__item menu__list--resources">
-                        <a href="https://minae.go.cr/" class="menu__link menu__link--footer">MINAE</a>
-                    </li>
-                </ul>
+            <h4 class="aside__tittle">Promociones del mes</h4>
+            <div class="aside-container">
+                <a class href="layouts/tours.html"><img id="aside_second_img" class="aside-containe__image"
+                    src="assets/images/happy-2723487_640.jpg"
+                    alt="Baile tipico de Costa Rica" /></a>
+                <a id="aside_second_link" class="aside_link" href="layouts/tours.html">Cultura y costumbres</a>
             </div>
-        </div>
-        <div class="footer-container__bottom-message">
-            <p>
-                <small>2021 Juan Carlos Sequeira Piedra | Fines educativos</small>
-            </p>
-        </div>
-    </footer>
-</body>
+            <div class="aside-container">
+                <a class href="layouts/tours.html"><img id="aside_second_img" class="aside-containe__image"
+                    src="assets/images/elevated-view-of-tropical-mountain-in-costa-rica.jpg"
+                    alt="montaña" /></a>
+                <a id="aside_second_link" class="aside_link" href="layouts/tours.html">Paisajes en naturaleza</a>
+            </div>
+        </aside>
+        <footer class="page-footer">
+            <div class="footer__first-row">
+                <div class="footer-container footer-container__tourist-sites">
+                    <ul class="footer__hyperlinks">
+                        <li class="menu__item menu__item--tittle">
+                            <h5 class="menu__list--resources-tittle">Sitios
+                                turisticos</h5>
+                        </li>
+                        <li class="menu__item menu__list--tourist-sites">
+                            <a
+                                href="http://www.sinac.go.cr/ES/ac/acopac/pnc/Paginas/default.aspx"
+                                class="menu__link menu__link--footer">Parque
+                                Nacional Carara</a>
+                        </li>
+                        <li class="menu__item menu__list--tourist-sites">
+                            <a href="https://www.villalapas.com/"
+                                class="menu__link menu__link--footer">Villa
+                                Lapas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-container footer-container__local-transport">
+                    <ul class="footer__hyperlinks">
+                        <li class="menu__item menu__item--tittle">
+                            <h5 class="menu__list--resources-tittle">Transporte
+                                local</h5>
+                        </li>
+                        <li class="menu__item menu__list--local-transport">
+                            <a
+                                href="https://www.kolbi1155.com/costa-rica/negocios/asociacion-de-taxis-de-jaco/jaco-garabito"
+                                class="menu__link menu__link--footer">Taxis Jaco</a>
+                        </li>
+                        <li class="menu__item menu__list--local-transport">
+                            <a href="https://www.transportesjacoruta655.com/"
+                                class="menu__link menu__link--footer">Transporte
+                                Jaco</a>
+                        </li>
+                        <li class="menu__item menu__list--local-transport">
+                            <a href="#" class="menu__link menu__link--footer">Fauna</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-container footer-container__resources">
+                    <ul class="footer__hyperlinks">
+                        <li class="menu__item menu__item--tittle">
+                            <h5 class="menu__list--resources-tittle">Enlaces de
+                                interes</h5>
+                        </li>
+                        <li class="menu__item menu__list--resources">
+                            <a
+                                href="http://www.crbio.cr/crbio/?page_id=61&lang=en"
+                                class="menu__link menu__link--footer">CRBio</a>
+                        </li>
+                        <li class="menu__item menu__list--resources">
+                            <a href="https://www.sirefor.go.cr/"
+                                class="menu__link menu__link--footer">SIREFOR</a>
+                        </li>
+                        <li class="menu__item menu__list--resources">
+                            <a href="https://minae.go.cr/" class="menu__link
+                                menu__link--footer">MINAE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-container__bottom-message">
+                <p>
+                    <small>2021 Juan Carlos Sequeira Piedra | Fines educativos</small>
+                </p>
+            </div>
+        </footer>
+    </body>
 
 </html>

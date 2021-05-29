@@ -9,10 +9,10 @@
             tours" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript" src="assets/js/showResponsiveMenu.js"></script>
-    <script type="text/javascript" src="assets/js/headerAnimation.js"></script>
-    <script type="text/javascript" src="assets/js/updateMainContent.js"></script>
-    <script type="text/javascript" src="assets/js/dynamicModal.js"></script>
+    <script src="assets/js/showResponsiveMenu.js"></script>
+    <script src="assets/js/headerAnimation.js"></script>
+    <script src="assets/js/updateMainContent.js"></script>
+    <script src="assets/js/dynamicModal.js"></script>
     <title>Flora y Fauna - Turrubares</title>
 </head>
 
@@ -40,7 +40,7 @@
                     </li>
                 </ul>
             </div>
-            <canvas id="canvas" class="header__animation" height="200px"></canvas>
+            <canvas id="canvas" class="header__animation"></canvas>
         </nav>
     </header>
     <nav id="nav-hyperlinks" class="page-nav__hyperlinks">
@@ -64,7 +64,7 @@
             <h2 id="section_tittle" class="section__tittle">
                 Cantón de Turrubares
             </h2>
-            <article id="section_article_history" class="section__article">
+            <article class="section__article">
                 <a
                     href="https://es.wikipedia.org/wiki/Cant%C3%B3n_de_Turrubares#/media/Archivo:Escudo_de_Turrubares.png"><img
                         class="img__principal"
@@ -146,9 +146,9 @@
             </div>
         </section>
         <section id="section_flora" class="section__main">
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Acacia
-                    collinsii</h3>
+            <h3 class="article__tittle">Acacia
+                collinsii</h3>
+            <article class="section__article">
                 <a href="https://es.m.wikipedia.org/wiki/Archivo:Acacia_collinsii4.jpg" target="_blank"><img
                         class="img__principal"
                         src="https://upload.wikimedia.org/wikipedia/commons/1/16/Acacia_collinsii4.jpg" alt="Planta Acacia collinsii - obtenido de
@@ -177,8 +177,8 @@
                 <a class="references__link" href="https://es.m.wikipedia.org/wiki/Acacia_collinsii"
                     target="”_blank”">Referencias</a>
             </div>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">
+            <article class="section__article">
+                <h3 class="article__tittle">
                     Arbol de Guanacaste(Enterolobium cyclocarpum)
                 </h3>
                 <a href="https://es.m.wikipedia.org/wiki/Archivo:%C3%81rbol_de_Guancaste.jpg" target="_blank"><img
@@ -237,8 +237,8 @@
                 <a class="references__link" href="https://es.m.wikipedia.org/wiki/Enterolobium_cyclocarpum"
                     target="”_blank”">Referencias</a>
             </div>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">
+            <article class="section__article">
+                <h3 class="article__tittle">
                     Palo de hormigo(Platymiscium dimorphandrum)
                 </h3>
                 <a href="https://es.m.wikipedia.org/wiki/Archivo:Hormigo.png" target="_blank"><img
@@ -285,9 +285,9 @@
             </div>
         </section>
         <section id="section_fauna" class="section__main">
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Saino(Pecarí
-                    barbiblanco)</h3>
+            <h3 class="article__tittle">Saino(Pecarí
+                barbiblanco)</h3>
+            <article class="section__article">
                 <a href="https://es.m.wikipedia.org/wiki/Archivo:Tayassu_pecari_-Brazil-8.jpg" target="_blank"><img
                         class="img__principal"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tayassu_pecari_-Brazil-8.jpg/763px-Tayassu_pecari_-Brazil-8.jpg"
@@ -331,8 +331,8 @@
                 <a class="references__link" href="https://es.m.wikipedia.org/wiki/Tayassu_pecari"
                     target="”_blank”">Referencias</a>
             </div>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">
+            <article class="section__article">
+                <h3 class="article__tittle">
                     Perezoso bayo(Bradypus variegatus)
                 </h3>
                 <a href="https://es.m.wikipedia.org/wiki/Archivo:Bradypus.jpg" target="_blank"><img
@@ -382,8 +382,8 @@
                 <a class="references__link" href="https://es.m.wikipedia.org/wiki/Bradypus_variegatus"
                     target="”_blank”">Referencias</a>
             </div>
-            <article id="section_article" class="section__article">
-                <h3 id="article_tittle" class="article__tittle">Terciopelo(Bothrops
+            <article class="section__article">
+                <h3 class="article__tittle">Terciopelo(Bothrops
                     asper)</h3>
                 <a href="https://es.m.wikipedia.org/wiki/Archivo:Bothrops_asper_(Panama)_coiled.jpg"
                     target="_blank"><img class="img__principal"
@@ -453,7 +453,7 @@
         </div>
         <div class="aside-container">
             <a class href="https://es.m.wikipedia.org/wiki/Ctenosaura_similis" target="_blank"><img
-                    id="aside_second_img" class="aside-containe__image"
+                    class="aside-containe__image"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/CtenosauraSimilis.jpg/960px-CtenosauraSimilis.jpg"
                     alt="Garrobo" /></a>
             <a id="aside_second_link" class="aside_link">Garrobo
@@ -461,12 +461,12 @@
         </div>
         <h4 class="aside__tittle">Promociones del mes</h4>
         <div class="aside-container">
-            <a class href="layouts/tours.html"><img id="aside_second_img" class="aside-containe__image"
+            <a class href="layouts/tours.html"><img class="aside-containe__image"
                     src="assets/images/happy-2723487_640.jpg" alt="Baile tipico de Costa Rica" /></a>
             <a id="aside_second_link" class="aside_link" href="layouts/tours.html">Cultura y costumbres</a>
         </div>
         <div class="aside-container">
-            <a class href="layouts/tours.html"><img id="aside_second_img" class="aside-containe__image"
+            <a class href="layouts/tours.html"><img class="aside-containe__image"
                     src="assets/images/elevated-view-of-tropical-mountain-in-costa-rica.jpg" alt="montaña" /></a>
             <a id="aside_second_link" class="aside_link" href="layouts/tours.html">Paisajes en naturaleza</a>
         </div>
